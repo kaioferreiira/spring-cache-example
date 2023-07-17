@@ -1,8 +1,9 @@
-package com.example.caching.cache_config;
+package com.example.caching.application.cacheConfig;
 
 import net.sf.ehcache.config.CacheConfiguration;
 import net.sf.ehcache.store.MemoryStoreEvictionPolicy;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
@@ -14,14 +15,14 @@ import org.springframework.context.annotation.Configuration;
 @EnableCaching
 public class CacheConfig extends CachingConfigurerSupport {
 
-//	@Value("${cache.token.timeToLiveSeconds}")
-//	private String timeToLiveSeconds;
+	@Value("${cache.timeToLiveSeconds.token}")
+	private String timeToLiveSecondsToken;
 
 	@Bean
-	@Qualifier(CacheManagerNames.TOKEN_CACHE)
+	@Qualifier(CacheManagerNames.TOKEN_CACHE_CLIENT_EXAMPLE)
 	@Override
 	public CacheManager cacheManager() {
-		return new EhCacheCacheManager(ehCacheManager(CacheManagerNames.TOKEN_CACHE, 4l));
+		return new EhCacheCacheManager(ehCacheManager(CacheManagerNames.TOKEN_CACHE_CLIENT_EXAMPLE,Long.parseLong(timeToLiveSecondsToken)));
 	}
 
 	public net.sf.ehcache.CacheManager ehCacheManager(String ehCacheManager, Long timeToLiveSeconds) {

@@ -1,9 +1,9 @@
 spring:
   application:
-    name: caching
-  config:
-    activate:
-      on-profile: test
+    name: spring-cache-example
+
+server:
+  port: 8081
 
 
 cache:
