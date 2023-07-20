@@ -2,16 +2,13 @@ package com.example.caching.business.service;
 
 import com.example.caching.application.cacheConfig.CacheManagerNames;
 import com.example.caching.business.service.dto.TokenResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TokenService {
+public class TokenService1 {
 
-		@Cacheable(cacheNames = CacheManagerNames.TOKEN_CACHE_CLIENT_EXAMPLE)
-//	@Cacheable(cacheNames = CacheManagerNames.TOKEN_CACHE_CLIENT_EXAMPLE, key = "#autorization")
+	@Cacheable(CacheManagerNames.TOKEN_1)
 	public TokenResponse getToken(String autorization) {
 
 		simulateSlowTokenClient();

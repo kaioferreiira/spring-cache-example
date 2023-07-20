@@ -5,7 +5,10 @@ spring:
 server:
   port: 8081
 
-
 cache:
-  timeToLiveSeconds:
-    token: 4
+  token1:
+    timeToLiveSeconds: 4
+    maxElementEntries: 1
+  token2:
+    timeToLiveSeconds: 4
+    maxElementEntries: 1

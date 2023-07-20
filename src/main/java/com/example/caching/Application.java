@@ -1,6 +1,7 @@
 package com.example.caching;
 
-import com.example.caching.business.service.TokenService;
+import com.example.caching.business.service.TokenService1;
+import com.example.caching.business.service.TokenService2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +20,12 @@ public class Application implements CommandLineRunner {
 
 	private static final Logger logger = LoggerFactory.getLogger(Application.class);
 	public static final String CHAVE_DE_ACESSO = "123";
-	private final TokenService tokenService;
+	private final TokenService1 tokenService1;
+	private final TokenService2 tokenService2;
 
-	public Application(TokenService tokenService) {
-		this.tokenService = tokenService;
+	public Application(TokenService1 tokenService1, TokenService2 tokenService2) {
+		this.tokenService1 = tokenService1;
+		this.tokenService2 = tokenService2;
 	}
 
 	public static void main(String[] args) {
@@ -35,29 +38,39 @@ public class Application implements CommandLineRunner {
 
 		logger.info(".... Fetching token");
 
-		logger.info("Get-token-1 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		slowCall();
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		slowCall();
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
 
-		logger.info("Get-token-2 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
 
 		slowCall();
 
-		logger.info("Get-token-3 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		slowCall();
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		slowCall();
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
 
 		slowCall();
 
-		logger.info("Get-token-4 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
 
-		logger.info("Get-token-5 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-1 -->" + tokenService1.getToken(CHAVE_DE_ACESSO));
+		logger.info("Get-token-2 -->" + tokenService2.getToken(CHAVE_DE_ACESSO));
 
-		slowCall();
-
-		logger.info("Get-token-6 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
-
-		logger.info("Get-token-7 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
-
-		logger.info("Get-token-8 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
-
-		logger.info("Get-token-9 -->" + tokenService.getToken(CHAVE_DE_ACESSO));
 
 	}
 
