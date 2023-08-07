@@ -7,8 +7,8 @@ server:
 
 cache:
   token1:
-    timeToLiveSeconds: 4
+    timeToLiveSeconds: 5
     maxElementEntries: 1
   token2:
-    timeToLiveSeconds: 4
+    timeToLiveSeconds: 5
     maxElementEntries: 1

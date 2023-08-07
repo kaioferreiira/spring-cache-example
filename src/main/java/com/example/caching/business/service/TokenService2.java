@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TokenService2 {
-
 	@Cacheable(CacheManagerNames.TOKEN_2)
 	public TokenResponse getToken(String autorization) {
 

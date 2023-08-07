@@ -2,6 +2,7 @@ package com.example.caching.business.service;
 
 import com.example.caching.application.cacheConfig.CacheManagerNames;
 import com.example.caching.business.service.dto.TokenResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
