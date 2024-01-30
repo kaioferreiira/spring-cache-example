@@ -1,4 +1,4 @@
-package com.example.caching.application.cacheConfig;
+package com.example.caching.application.cacheconfig;
 
 import net.sf.ehcache.config.CacheConfiguration;
 import net.sf.ehcache.store.MemoryStoreEvictionPolicy;
@@ -36,9 +36,9 @@ public class CacheConfig extends CachingConfigurerSupport {
     @Bean
     public net.sf.ehcache.CacheManager ehCacheManager() {
 
-        buildCacheConfiguration(CacheManagerNames.TOKEN_1, timeToLiveSecondsToken1, maxElementEntriesoken1);
+        buildCacheConfiguration(CacheManagerNames.CACHE_NAME_SERVICE_1, timeToLiveSecondsToken1, maxElementEntriesoken1);
 
-        buildCacheConfiguration(CacheManagerNames.TOKEN_2, timeToLiveSecondsToken2, maxElementEntriesToken2);
+        buildCacheConfiguration(CacheManagerNames.CACHE_NAME_SERVICE_2, timeToLiveSecondsToken2, maxElementEntriesToken2);
 
         return net.sf.ehcache.CacheManager.newInstance(CONFIGURATION);
     }

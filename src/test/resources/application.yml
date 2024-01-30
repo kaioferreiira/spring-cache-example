@@ -1,14 +1,12 @@
 spring:
   application:
-    name: spring-cache-example
-
-server:
-  port: 8081
+    name: caching
 
 cache:
   token1:
-    timeToLiveSeconds: 40
+    timeToLiveSeconds: 20
     maxElementEntries: 10
+
   token2:
     timeToLiveSeconds: 10
     maxElementEntries: 5

@@ -1,0 +1,129 @@
+package com.example.caching.business.service.v2;
+
+import com.example.caching.application.cacheconfig.CacheManagerNames;
+import com.example.caching.business.service.dto.TokenResponse;
+import com.example.caching.business.service.v2.TokenServiceV2;
+import com.example.caching.business.util.GenericParams;
+import net.sf.ehcache.Cache;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
+import org.springframework.test.context.TestPropertySource;
+
+import java.util.Objects;
+
+import static com.example.caching.business.util.CacheUtil.slow;
+import static org.junit.jupiter.api.Assertions.*;
+
+@SpringBootTest
+@TestPropertySource(properties = {"spring.cache.type=ehcache"})
+public class TokenServiceV2Test extends GenericParams {
+
+    private Cache cacheService2;
+
+    @Autowired
+    private CacheManager cacheManager;
+
+    @Autowired
+    private TokenServiceV2 service2;
+
+    @BeforeEach
+    public void setUp() {
+        cacheService2 = Objects.requireNonNull(((EhCacheCacheManager) cacheManager)
+                .getCacheManager()).getCache(CacheManagerNames.CACHE_NAME_SERVICE_2);
+        assertNotNull(service2);
+    }
+
+    @Test
+    public void testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos() {
+
+        cacheService2.getCacheManager().clearAll();
+
+        TokenResponse tokenIntegracaoResponse = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse);
+        assertNotNull(tokenIntegracaoResponse.token());
+
+        TokenResponse elemetCache123Now = (TokenResponse) cacheService2.get(COOP_515).getObjectValue();
+
+        slow(10000);
+
+        TokenResponse elemetCache123After = (TokenResponse) cacheService2.get(COOP_515).getObjectValue();
+
+        assertEquals(elemetCache123Now.token(), elemetCache123After.token());
+    }
+
+    @Test
+    public void testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste() {
+
+        cacheService2.getCacheManager().clearAll();
+
+        TokenResponse tokenIntegracaoResponse = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse);
+        assertNotNull(tokenIntegracaoResponse.token());
+        TokenResponse elemetCache123Now = (TokenResponse) cacheService2.get(COOP_515).getObjectValue();
+
+        slow(2000);
+
+        TokenResponse elemetCache123After = (TokenResponse) cacheService2.get(COOP_515).getObjectValue();
+        assertEquals(elemetCache123Now.token(), elemetCache123After.token());
+
+        assertNull(cacheService2.get(COOP_590), "validar 590 não existente! ");
+    }
+
+    @Test
+    public void testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente() {
+
+        cacheService2.getCacheManager().clearAll();
+
+        TokenResponse callToken515first = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse callToken590first = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
+        TokenResponse callToken566first = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+
+        slow(2000);
+
+        TokenResponse callToken515Second = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse callToken590Second = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
+        TokenResponse callToken566Second = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+
+        assertNotNull(callToken515first);
+        assertNotNull(callToken590first);
+        assertNotNull(callToken566first);
+        assertNotNull(callToken515Second);
+        assertNotNull(callToken590Second);
+        assertNotNull(callToken566Second);
+        assertEquals(callToken515first.token(), callToken515Second.token());
+        assertEquals(callToken590first.token(), callToken590Second.token());
+        assertEquals(callToken566first.token(), callToken566Second.token());
+
+    }
+
+    @Test
+    public void testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum() {
+
+        cacheService2.getCacheManager().clearAll();
+
+        TokenResponse callToken515first = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse callToken590first = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
+        TokenResponse callToken566first = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+        TokenResponse callToken515Second = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse callToken590Second = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
+        TokenResponse callToken566Second = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+
+        assertNotNull(callToken515first);
+        assertNotNull(callToken590first);
+        assertNotNull(callToken566first);
+        assertNotNull(callToken515Second);
+        assertNotNull(callToken590Second);
+        assertNotNull(callToken566Second);
+
+        slow(20000);
+
+        assertNull(cacheService2.get(COOP_515));
+        assertNull(cacheService2.get(COOP_590));
+        assertNull(cacheService2.get(COOP_566));
+    }
+
+}
