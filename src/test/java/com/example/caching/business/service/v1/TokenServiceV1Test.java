@@ -2,15 +2,14 @@ package com.example.caching.business.service.v1;
 
 import com.example.caching.application.cacheconfig.CacheManagerNames;
 import com.example.caching.business.service.dto.TokenResponse;
-import com.example.caching.business.service.v1.TokenServiceV1;
+import com.example.caching.business.util.CacheUtil;
 import com.example.caching.business.util.GenericParams;
-import net.sf.ehcache.Cache;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.ehcache.EhCacheCacheManager;
 import org.springframework.test.context.TestPropertySource;
 
 import java.util.Objects;
@@ -18,8 +17,9 @@ import java.util.Objects;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@TestPropertySource(properties = {"spring.cache.type=ehcache"})
+@TestPropertySource(properties = {"spring.cache.type=caffeine"})
 public class TokenServiceV1Test extends GenericParams {
+
     private Cache cacheService1;
 
     @Autowired
@@ -30,52 +30,57 @@ public class TokenServiceV1Test extends GenericParams {
 
     @BeforeEach
     public void setUp() {
-        cacheService1 = Objects.requireNonNull(((EhCacheCacheManager) cacheManager).getCacheManager())
-                .getCache(CacheManagerNames.CACHE_NAME_SERVICE_1);
+        cacheService1 = Objects.requireNonNull((cacheManager
+                .getCache(CacheManagerNames.CACHE_NAME_SERVICE_1)));
+        assertNotNull(service1);
     }
 
     @Test
     public void testEhCacheService1_RetornaMesmoToken_After10Segundos() {
 
-        cacheService1.getCacheManager().clearAll();
+        cacheService1.clear();
 
-        TokenResponse tokenIntegracaoResponse = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
-        assertNotNull(tokenIntegracaoResponse);
-        assertNotNull(tokenIntegracaoResponse.token());
+        TokenResponse tokenIntegracaoResponse1 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse1);
+        assertNotNull(tokenIntegracaoResponse1.token());
 
-        TokenResponse elemetCache123Now = (TokenResponse) cacheService1.get(CHAVE_DE_ACESSO_COOP_515).getObjectValue();
-        threadSleep(10000);
-        TokenResponse elemetCache123After = (TokenResponse) cacheService1.get(CHAVE_DE_ACESSO_COOP_515).getObjectValue();
+        TokenResponse tokenIntegracaoResponse2 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse2);
+        assertNotNull(tokenIntegracaoResponse2.token());
 
-        assertEquals(elemetCache123Now.token(), elemetCache123After.token());
+        assertEquals(tokenIntegracaoResponse1.token(), tokenIntegracaoResponse2.token());
+
+        CacheUtil.slow(10000);
+
+        TokenResponse tokenIntegracaoResponse3 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse3);
+        assertNotNull(tokenIntegracaoResponse3.token());
+
+        assertEquals(tokenIntegracaoResponse1.token(), tokenIntegracaoResponse3.token());
+
     }
 
     @Test
     public void testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos() {
 
-        cacheService1.getCacheManager().clearAll();
+        cacheService1.clear();
 
-        TokenResponse tokenIntegracaoResponse = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
-        assertNotNull(tokenIntegracaoResponse);
-        assertNotNull(tokenIntegracaoResponse.token());
+        TokenResponse tokenIntegracaoResponse1 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse1);
+        assertNotNull(tokenIntegracaoResponse1.token());
 
-        TokenResponse elemetCache123Now = (TokenResponse) cacheService1.get(CHAVE_DE_ACESSO_COOP_515).getObjectValue();
-        threadSleep(10000);
-        TokenResponse elemetCache123After = (TokenResponse) cacheService1.get(CHAVE_DE_ACESSO_COOP_515).getObjectValue();
+        TokenResponse tokenIntegracaoResponse2 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        assertNotNull(tokenIntegracaoResponse2);
+        assertNotNull(tokenIntegracaoResponse2.token());
 
-        assertEquals(elemetCache123Now.token(), elemetCache123After.token());
+        assertEquals(tokenIntegracaoResponse1.token(), tokenIntegracaoResponse2.token());
 
-        threadSleep(20000);
-        assertNull(cacheService1.get(CHAVE_DE_ACESSO_COOP_515));
+        CacheUtil.slow(20000);
+
+        Cache.ValueWrapper actual = cacheService1.get(CHAVE_DE_ACESSO_COOP_515);
+        assertNull(actual);
     }
 
 
-    private void threadSleep(long numMillisecondsToSleep) {
 
-        try {
-            Thread.sleep(numMillisecondsToSleep);
-        } catch (InterruptedException e) {
-            throw new IllegalStateException(e);
-        }
-    }
 }

@@ -8,4 +8,5 @@ public class GenericParams {
     protected static final String CHAVE_DE_ACESSO_COOP_590 = "789";
     protected static final String COOP_566 = "566";
     protected static final String CHAVE_DE_ACESSO_COOP_566 = "456";
+
 }

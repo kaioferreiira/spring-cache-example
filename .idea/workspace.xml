@@ -4,24 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ce94b5c-c89f-4b16-9825-46123c0028ca" name="Changes" comment="Ajustando contexto de token">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/util/CacheUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/util/GenericParams.java" afterDir="false" />
+    <list default="true" id="5ce94b5c-c89f-4b16-9825-46123c0028ca" name="Changes" comment="ajustando projeto e criando contexto de reaproveitamento de token">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheConfig/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheConfig/CacheManagerNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheManagerNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/TokenService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/TokenService2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v2/TokenServiceV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheManagerNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheManagerNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/dto/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/dto/TokenResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v2/TokenServiceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v2/TokenServiceV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/util/CacheUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/util/CacheUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/TokenServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/util/GenericParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/util/GenericParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +57,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-cache-example" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring-cache-example" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring-cache-example" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -74,6 +74,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiProvider">{
@@ -101,7 +106,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build spring-cache-example.executor": "Run",
-    "Gradle.Tests in 'spring-cache-example.test'.executor": "Run",
+    "Gradle.Tests in 'spring-cache-example.test'.executor": "Coverage",
     "Gradle.TokenService1Test.executor": "Coverage",
     "Gradle.TokenService1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor": "Run",
     "Gradle.TokenService1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor": "Run",
@@ -112,6 +117,14 @@
     "Gradle.TokenService2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor": "Debug",
     "Gradle.TokenServiceTest.executor": "Debug",
     "Gradle.TokenServiceTest.testEhCacheService1_RetornaTokenCoperativa515_After10Segundos.executor": "Debug",
+    "Gradle.TokenServiceV1Test.executor": "Run",
+    "Gradle.TokenServiceV1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor": "Debug",
+    "Gradle.TokenServiceV1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor": "Debug",
+    "Gradle.TokenServiceV2Test.executor": "Run",
+    "Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente.executor": "Run",
+    "Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste.executor": "Debug",
+    "Gradle.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor": "Debug",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "Gradle.spring-cache-example [build].executor": "Run",
     "Gradle.spring-cache-example [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -125,9 +138,9 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/cache-caffeine-spring-3",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kaiocosta/Library/Mobile Documents/com~apple~CloudDocs/PROJETOS PESSOAIS/spring-cache-example",
+    "last_opened_file_path": "/home/kaiocosta/Documentos/Desenv/spring-cache-example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -162,7 +175,7 @@
       <recent name="com.example.caching.application.cacheConfig" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.spring-cache-example [clean]">
+  <component name="RunManager" selected="Gradle.Tests in 'spring-cache-example.test'">
     <configuration name="Tests in 'spring-cache-example.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,7 +198,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TokenServiceV1Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -198,7 +211,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.caching.business.service.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum&quot;" />
+            <option value="&quot;com.example.caching.business.service.v1.TokenServiceV1Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,7 +222,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TokenServiceV2Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,7 +235,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.caching.business.service.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente&quot;" />
+            <option value="&quot;com.example.caching.business.service.v2.TokenServiceV2Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,48 +246,52 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="spring-cache-example [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.caching.business.service.v2.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="spring-cache-example [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.caching.business.service.v2.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -286,19 +303,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.spring-cache-example [clean]" />
-        <item itemvalue="Gradle.spring-cache-example [build]" />
         <item itemvalue="Gradle.Tests in 'spring-cache-example.test'" />
-        <item itemvalue="Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum" />
-        <item itemvalue="Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" />
+        <item itemvalue="Gradle.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos" />
+        <item itemvalue="Gradle.TokenServiceV2Test" />
+        <item itemvalue="Gradle.TokenServiceV1Test" />
+        <item itemvalue="Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-3c5dfc45" />
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-220112af" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -323,7 +340,10 @@
       <workItem from="1706272458159" duration="16475000" />
       <workItem from="1706545563347" duration="3412000" />
       <workItem from="1706622379342" duration="2716000" />
-      <workItem from="1706643672601" duration="2130000" />
+      <workItem from="1706643672601" duration="2419000" />
+      <workItem from="1706705430808" duration="162000" />
+      <workItem from="1709755395577" duration="26000" />
+      <workItem from="1720788232443" duration="10129000" />
     </task>
     <task id="LOCAL-00001" summary="Ajustando contexto de token">
       <created>1689619793252</created>
@@ -332,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689619793252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajustando projeto e criando contexto de reaproveitamento de token">
+      <option name="closed" value="true" />
+      <created>1706645855130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706645855131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,40 +368,75 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajustando contexto de token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustando contexto de token" />
+    <MESSAGE value="ajustando projeto e criando contexto de reaproveitamento de token" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustando projeto e criando contexto de reaproveitamento de token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
-          <line>57</line>
+          <line>67</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
-          <line>68</line>
+          <line>79</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java</url>
-          <line>54</line>
+          <line>50</line>
           <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java</url>
+          <line>38</line>
+          <properties class="com.example.caching.business.service.v2.TokenServiceV2Test" method="testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
