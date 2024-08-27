@@ -4,35 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ce94b5c-c89f-4b16-9825-46123c0028ca" name="Changes" comment="ajustando projeto e criando contexto de reaproveitamento de token">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5ce94b5c-c89f-4b16-9825-46123c0028ca" name="Changes" comment="estrutura spring 3 caffeine e java 21">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheManagerNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/application/cacheconfig/CacheManagerNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/dto/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/dto/TokenResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v1/TokenServiceV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v2/TokenServiceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/service/v2/TokenServiceV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/caching/business/util/CacheUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/caching/business/util/CacheUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v1/TokenServiceV1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/caching/business/util/GenericParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/caching/business/util/GenericParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +34,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring-cache-example" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-cache-example" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-cache-example" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -76,11 +64,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/estrutura_caffeine" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kaioferreiira"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kaioferreiira/spring-cache-example",
+    "accountId": "4e6870eb-a032-443d-ae20-f4d05adaf1f4"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{
   &quot;contexts&quot;: [
     {
@@ -103,57 +103,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build spring-cache-example.executor": "Run",
-    "Gradle.Tests in 'spring-cache-example.test'.executor": "Coverage",
-    "Gradle.TokenService1Test.executor": "Coverage",
-    "Gradle.TokenService1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor": "Run",
-    "Gradle.TokenService1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor": "Run",
-    "Gradle.TokenService2Test.executor": "Run",
-    "Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum.executor": "Debug",
-    "Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente.executor": "Run",
-    "Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste.executor": "Debug",
-    "Gradle.TokenService2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor": "Debug",
-    "Gradle.TokenServiceTest.executor": "Debug",
-    "Gradle.TokenServiceTest.testEhCacheService1_RetornaTokenCoperativa515_After10Segundos.executor": "Debug",
-    "Gradle.TokenServiceV1Test.executor": "Run",
-    "Gradle.TokenServiceV1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor": "Debug",
-    "Gradle.TokenServiceV1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor": "Debug",
-    "Gradle.TokenServiceV2Test.executor": "Run",
-    "Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente.executor": "Run",
-    "Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste.executor": "Debug",
-    "Gradle.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor": "Debug",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.spring-cache-example [build].executor": "Run",
-    "Gradle.spring-cache-example [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "feature/cache-caffeine-spring-3",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kaiocosta/Documentos/Desenv/spring-cache-example",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "spring.configuration.checksum": "e74df00fb9d36709f106cdf7cc423ba3",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build spring-cache-example.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'spring-cache-example.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.TokenService1Test.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.TokenService1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenService1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenService2Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarNenhum.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenService2Test.testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenService2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceTest.testEhCacheService1_RetornaTokenCoperativa515_After10Segundos.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceV1Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenServiceV1Test.testEhCacheService1_RetornaMesmoToken_After10Segundos.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceV1Test.testEhCacheService1_RetornaVazioDoCache_AposExpirar20Segundos.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceV2Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515eValidarSeExiste590_EntaoRetornarNaoExiste.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-cache-example [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.spring-cache-example [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/cache-caffeine-spring-3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kaiocosta/Documentos/Desenv/spring-cache-example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e74df00fb9d36709f106cdf7cc423ba3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -198,30 +198,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TokenServiceV1Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.caching.business.service.v1.TokenServiceV1Test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TokenServiceV2Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -236,30 +212,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.example.caching.business.service.v2.TokenServiceV2Test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.caching.business.service.v2.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -294,6 +246,50 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="spring-cache-example [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-cache-example [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-cache-example.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.caching.Application" />
@@ -304,10 +300,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'spring-cache-example.test'" />
+        <item itemvalue="Gradle.spring-cache-example [clean]" />
+        <item itemvalue="Gradle.spring-cache-example [build]" />
         <item itemvalue="Gradle.TokenServiceV2Test.testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos" />
         <item itemvalue="Gradle.TokenServiceV2Test" />
-        <item itemvalue="Gradle.TokenServiceV1Test" />
-        <item itemvalue="Gradle.TokenServiceV2Test.testEhCacheService2_AdicionarTokenPara515590566_EntaoRetornarTodosCacheExistente" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706645855131</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="estrutura spring 3 caffeine e java 21">
+      <option name="closed" value="true" />
+      <created>1724779670504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724779670504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +373,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajustando contexto de token" />
     <MESSAGE value="ajustando projeto e criando contexto de reaproveitamento de token" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustando projeto e criando contexto de reaproveitamento de token" />
+    <MESSAGE value="estrutura spring 3 caffeine e java 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="estrutura spring 3 caffeine e java 21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,7 +437,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/caching/business/service/v2/TokenServiceV2Test.java</url>
           <line>38</line>
-          <properties class="com.example.caching.business.service.v2.TokenServiceV2Test" method="testEhCacheService2_RetornaMesmoTokenCooperativa515_After10Segundos">
+          <properties class="com.example.caching.business.service.v2.TokenServiceV2Test" method="testEhCacheService2_RetornaMesmoTokenCooperativa515_After106Segundos">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -448,7 +453,7 @@
     </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spring_cache_example$Tests_in__spring_cache_example_test_.ic" NAME="Tests in 'spring-cache-example.test' Coverage Results" MODIFIED="1706645136407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/spring_cache_example$Tests_in__spring_cache_example_test_.ic" NAME="Tests in 'spring-cache-example.test' Coverage Results" MODIFIED="1724780261404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/spring_cache_example$TokenService1Test.ic" NAME="TokenService1Test Coverage Results" MODIFIED="1706289807372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
