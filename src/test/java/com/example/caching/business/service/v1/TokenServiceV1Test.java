@@ -40,11 +40,11 @@ public class TokenServiceV1Test extends GenericParams {
 
         cacheService1.clear();
 
-        TokenResponse tokenIntegracaoResponse1 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse1 = service1.getToken(SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse1);
         assertNotNull(tokenIntegracaoResponse1.token());
 
-        TokenResponse tokenIntegracaoResponse2 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse2 = service1.getToken(SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse2);
         assertNotNull(tokenIntegracaoResponse2.token());
 
@@ -52,7 +52,7 @@ public class TokenServiceV1Test extends GenericParams {
 
         CacheUtil.slow(10000);
 
-        TokenResponse tokenIntegracaoResponse3 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse3 = service1.getToken(SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse3);
         assertNotNull(tokenIntegracaoResponse3.token());
 
@@ -65,11 +65,11 @@ public class TokenServiceV1Test extends GenericParams {
 
         cacheService1.clear();
 
-        TokenResponse tokenIntegracaoResponse1 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse1 = service1.getToken(SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse1);
         assertNotNull(tokenIntegracaoResponse1.token());
 
-        TokenResponse tokenIntegracaoResponse2 = service1.getToken(CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse2 = service1.getToken(SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse2);
         assertNotNull(tokenIntegracaoResponse2.token());
 
@@ -77,7 +77,7 @@ public class TokenServiceV1Test extends GenericParams {
 
         CacheUtil.slow(20000);
 
-        Cache.ValueWrapper actual = cacheService1.get(CHAVE_DE_ACESSO_COOP_515);
+        Cache.ValueWrapper actual = cacheService1.get(SECRET_KEY);
         assertNull(actual);
     }
 

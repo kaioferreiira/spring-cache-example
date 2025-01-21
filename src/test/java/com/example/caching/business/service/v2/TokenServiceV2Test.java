@@ -40,13 +40,13 @@ public class TokenServiceV2Test extends GenericParams {
 
         cacheService2.clear();
 
-        TokenResponse tokenIntegracaoResponse = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse = service2.getToken(API_KEY, SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse);
         assertNotNull(tokenIntegracaoResponse.token());
 
         slow(6000);
 
-        TokenResponse tokenIntegracaoResponse2 = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse2 = service2.getToken(API_KEY, SECRET_KEY);
 
         assertEquals(tokenIntegracaoResponse.token(), tokenIntegracaoResponse2.token());
     }
@@ -56,15 +56,15 @@ public class TokenServiceV2Test extends GenericParams {
 
         cacheService2.clear();
 
-        TokenResponse tokenIntegracaoResponse = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        TokenResponse tokenIntegracaoResponse = service2.getToken(API_KEY, SECRET_KEY);
         assertNotNull(tokenIntegracaoResponse);
         assertNotNull(tokenIntegracaoResponse.token());
 
         slow(1000);
 
-        service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
+        service2.getToken(API_KEY, SECRET_KEY);
 
-        assertNull(cacheService2.get(COOP_590), "validar 590 não existente! ");
+        assertNull(cacheService2.get(API_KEY_2), "validar 590 não existente! ");
     }
 
     @Test
@@ -72,15 +72,15 @@ public class TokenServiceV2Test extends GenericParams {
 
         cacheService2.clear();
 
-        TokenResponse callToken515first = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
-        TokenResponse callToken590first = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
-        TokenResponse callToken566first = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+        TokenResponse callToken515first = service2.getToken(API_KEY, SECRET_KEY);
+        TokenResponse callToken590first = service2.getToken(API_KEY_2, SECRET_KEY_2);
+        TokenResponse callToken566first = service2.getToken(API_KEY_3, SECRET_KEY_3);
 
         slow(2000);
 
-        TokenResponse callToken515Second = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
-        TokenResponse callToken590Second = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
-        TokenResponse callToken566Second = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+        TokenResponse callToken515Second = service2.getToken(API_KEY, SECRET_KEY);
+        TokenResponse callToken590Second = service2.getToken(API_KEY_2, SECRET_KEY_2);
+        TokenResponse callToken566Second = service2.getToken(API_KEY_3, SECRET_KEY_3);
 
         assertNotNull(callToken515first);
         assertNotNull(callToken590first);
@@ -99,12 +99,12 @@ public class TokenServiceV2Test extends GenericParams {
 
         cacheService2.clear();
 
-        TokenResponse callToken515first = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
-        TokenResponse callToken590first = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
-        TokenResponse callToken566first = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
-        TokenResponse callToken515Second = service2.getToken(COOP_515, CHAVE_DE_ACESSO_COOP_515);
-        TokenResponse callToken590Second = service2.getToken(COOP_590, CHAVE_DE_ACESSO_COOP_590);
-        TokenResponse callToken566Second = service2.getToken(COOP_566, CHAVE_DE_ACESSO_COOP_566);
+        TokenResponse callToken515first = service2.getToken(API_KEY, SECRET_KEY);
+        TokenResponse callToken590first = service2.getToken(API_KEY_2, SECRET_KEY_2);
+        TokenResponse callToken566first = service2.getToken(API_KEY_3, SECRET_KEY_3);
+        TokenResponse callToken515Second = service2.getToken(API_KEY, SECRET_KEY);
+        TokenResponse callToken590Second = service2.getToken(API_KEY_2, SECRET_KEY_2);
+        TokenResponse callToken566Second = service2.getToken(API_KEY_3, SECRET_KEY_3);
 
         assertNotNull(callToken515first);
         assertNotNull(callToken590first);
@@ -115,9 +115,9 @@ public class TokenServiceV2Test extends GenericParams {
 
         slow(20000);
 
-        assertNull(cacheService2.get(COOP_515));
-        assertNull(cacheService2.get(COOP_590));
-        assertNull(cacheService2.get(COOP_566));
+        assertNull(cacheService2.get(API_KEY));
+        assertNull(cacheService2.get(API_KEY_2));
+        assertNull(cacheService2.get(API_KEY_3));
     }
 
 }
