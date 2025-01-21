@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TokenServiceV2 {
+
     @Cacheable(value = CacheManagerNames.CACHE_NAME_SERVICE_2, key = "#cooperativa")
     public TokenResponse getToken(String cooperativa, String autorization) {
 
